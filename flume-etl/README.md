@@ -1,3 +1,7 @@
+# Project-Flume
+An AWS powered full fledged Realtime ELT Data Engineering project that extracts various json datasets from Canadian weather website, a public API (MSC GeoMet API), loads, transforms, forecasts and displays the future water levels in a dashboard for effective flood warning.
+
+
 # 🌊 Project Flume - Real-Time Weather & Water Monitoring Platform
 
 **End-to-end data engineering pipeline with ML-based flood prediction**
@@ -11,7 +15,7 @@
 
 ## 📋 Overview
 
-Project Flume is a production-grade data engineering platform that ingests, processes, and analyzes real-time environmental data from **2,600+ monitoring stations** across Canada. The system combines weather and hydrometric data to predict water level changes and identify flood risks **6-24 hours in advance** using machine learning.
+Project Flume is a Realtime production-grade data engineering platform that ingests, processes, and analyzes real-time environmental data from **2,600+ monitoring stations** across Canada. The system combines weather and hydrometric data to predict water level changes and identify flood risks **6-24 hours in advance** using machine learning.
 
 ### Key Features
 
@@ -28,7 +32,8 @@ Project Flume is a production-grade data engineering platform that ingests, proc
 ┌─────────────────────────────────────────────────────────────┐
 │ DATA SOURCES (Environment Canada)                           │
 │ • SWOB (1,100+ weather stations)                            │
-│ • Hydrometric (1,500+ water monitoring stations)            │
+│ • Hydrometric (1,500+ water monitoring stations).           |
+| • Climate_Hourly (Daily climate data)                       │
 └──────────────────┬──────────────────────────────────────────┘
                    │
                    ▼
