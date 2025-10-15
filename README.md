@@ -32,7 +32,8 @@ Project Flume is a production-grade data engineering platform that ingests, proc
 ┌─────────────────────────────────────────────────────────────┐
 │ DATA SOURCES (Environment Canada)                           │
 │ • SWOB (1,100+ weather stations)                            │
-│ • Hydrometric (1,500+ water monitoring stations)            │
+│ • Hydrometric (1,500+ water monitoring stations).           |
+| • Climate_Hourly (Daily climate data)                       │
 └──────────────────┬──────────────────────────────────────────┘
                    │
                    ▼
