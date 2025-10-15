@@ -202,10 +202,13 @@ The forecasting engine analyzes historical water level patterns to predict:
 ## 🛠️ Tech Stack
 
 **Cloud & Infrastructure:**
+- Terraform(AWS Infra Provision)
 - AWS S3 (data lake)
 - AWS Lambda (serverless compute)
 - AWS EC2 (data ingestion)
 - Docker (containerization)
+- AWS ECR (Container Registry)
+- AWS ECS (Cluster Management)
 
 **Data Processing:**
 - Python 3.12
