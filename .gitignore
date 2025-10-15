@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# AWS credentials (NEVER commit!)
+*.pem
+*.key
+credentials
+config
+.aws/
+
+# Environment variables
+.env
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+cron.log
+
+# Data files
+*.parquet
+*.json
+*.csv
+
+# Streamlit cache
+.streamlit/
+
+# Backup files
+*_backup.py
+
+# Zip files (already uploaded to S3/ECR)
+*.zip
+
+# Temporary/Test files
+placeholder.py
+verify_*.py
