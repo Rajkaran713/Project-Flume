@@ -264,21 +264,6 @@ The forecasting engine analyzes historical water level patterns to predict:
 - [ ] Historical data backfill (1+ years)
 - [ ] Multi-region deployment for redundancy
 
----
-
-## 📝 License
-
-This project is open-source and available under the MIT License.
-
----
-
-## 👤 Author
-
-**Rajkaran**
-- GitHub: [@Rajkaran713](https://github.com/Rajkaran713)
-- LinkedIn: [Your LinkedIn Profile]
-
----
 
 ## 🙏 Acknowledgments
 
