@@ -123,6 +123,8 @@ streamlit run dashboard.py
 ---
 
 ## 📂 Project Structure
+
+```
 Project-Flume/
 ├── producer/
 │   ├── producer.py              # EC2 data ingestion script
