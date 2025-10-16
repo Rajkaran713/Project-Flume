@@ -48,7 +48,7 @@ Project Flume is a production-grade data engineering platform that ingests, proc
 ┌─────────────────────────────────────────────────────────────┐
 │ BRONZE LAYER (S3)                                           │
 │ • Raw JSON files                                            │
-│ • ~120MB per batch                                           │
+│ • ~120MB per batch                                          │
 └──────────────────┬──────────────────────────────────────────┘
                    │ (S3 Event → Lambda)
                    ▼
