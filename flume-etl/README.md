@@ -15,7 +15,7 @@ An AWS powered full fledged Realtime ELT Data Engineering project that extracts 
 
 ## 📋 Overview
 
-Project Flume is a Realtime production-grade data engineering platform that ingests, processes, and analyzes real-time environmental data from **2,600+ monitoring stations** across Canada. The system combines weather and hydrometric data to predict water level changes and identify flood risks **6-24 hours in advance** using machine learning.
+Project Flume is a production-grade data engineering platform that ingests, processes, and analyzes real-time environmental data from **2,600+ monitoring stations** across Canada. The system combines weather and hydrometric data to predict water level changes and identify flood risks **6-24 hours in advance** using machine learning.
 
 ### Key Features
 
@@ -220,6 +220,7 @@ The forecasting engine analyzes historical water level patterns to predict:
 - Pandas (data manipulation)
 - PyArrow (Parquet I/O)
 - Boto3 (AWS SDK)
+- Athena(Adhoc-analysis) 
 
 **Machine Learning:**
 - Scikit-learn (regression models)

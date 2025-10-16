@@ -220,6 +220,7 @@ The forecasting engine analyzes historical water level patterns to predict:
 - Pandas (data manipulation)
 - PyArrow (Parquet I/O)
 - Boto3 (AWS SDK)
+- Athena(Adhoc-analysis) 
 
 **Machine Learning:**
 - Scikit-learn (regression models)
