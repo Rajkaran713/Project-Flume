@@ -48,7 +48,7 @@ Project Flume is a production-grade data engineering platform that ingests, proc
 ┌─────────────────────────────────────────────────────────────┐
 │ BRONZE LAYER (S3)                                           │
 │ • Raw JSON files                                            │
-│ • ~80MB per batch                                           │
+│ • ~120MB per batch                                           │
 └──────────────────┬──────────────────────────────────────────┘
                    │ (S3 Event → Lambda)
                    ▼
@@ -62,7 +62,7 @@ Project Flume is a production-grade data engineering platform that ingests, proc
                    ▼
 ┌─────────────────────────────────────────────────────────────┐
 │ SILVER LAYER (S3)                                           │
-│ • Clean Parquet files (~8MB per batch)                      │
+│ • Clean Parquet files (~5MB per batch)                      │
 │ • Columnar storage for analytics                            │
 └──────────────────┬──────────────────────────────────────────┘
                    │
@@ -123,20 +123,37 @@ streamlit run dashboard.py
 ---
 
 ## 📂 Project Structure
-```
 Project-Flume/
 ├── producer/
-│   ├── producer.py           # EC2 data ingestion script
-│   ├── Dockerfile            # Container for EC2 deployment
-│   └── requirements.txt      # Producer dependencies
+│   ├── producer.py              # EC2 data ingestion script
+│   ├── Dockerfile               # Container for EC2 deployment
+│   └── requirements.txt         # Producer dependencies
 ├── flume-etl/
-│   ├── lambda_transform.py   # Lambda transformation logic
-│   ├── create_gold_layer.py  # Gold layer aggregation
-│   ├── forecast_water_levels.py  # ML forecasting engine
-│   ├── dashboard.py          # Streamlit visualization
-│   └── transform_to_silver.py    # Silver layer processor
-├── requirements.txt          # Main dependencies
-└── README.md                 # This file
+│   ├── lambda_transform.py      # Lambda transformation logic
+│   ├── create_gold_layer.py     # Gold layer aggregation
+│   ├── forecast_water_levels.py # ML forecasting engine
+│   ├── dashboard.py             # Streamlit visualization
+│   └── transform_to_silver.py   # Silver layer processor
+├── terraform/
+│   ├── modules/
+│   │   └── s3-data-lake/        # Custom reusable S3 module
+│   │       ├── main.tf          # S3 bucket with data lake best practices
+│   │       ├── variables.tf     # Module input variables
+│   │       └── outputs.tf       # Module outputs
+│   ├── main.tf                  # Root module orchestrating resources
+│   ├── provider.tf              # AWS provider configuration
+│   ├── variables.tf             # Root input variables
+│   ├── outputs.tf               # Infrastructure outputs
+│   ├── lambda.tf                # Lambda function configuration
+│   ├── iam.tf                   # IAM roles and policies
+│   ├── ec2.tf                   # EC2 instance (optional)
+│   └── README.md                # Terraform documentation
+├── images/                      # Dashboard screenshots
+│   ├── dashboard-overview.png
+│   ├── weather-tab.png
+│   └── water-forecast.png
+├── requirements.txt             # Main Python dependencies
+└── README.md                    # This file
 ```
 
 ---
